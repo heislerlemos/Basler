@@ -1,0 +1,45 @@
+// Place all the styles related to the bemvindos controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+#title {
+	color: white;
+	font-size: 100px;
+    padding-left: 20px;
+
+
+
+}	
+
+#filler {
+font-size: 15px;
+color: white;
+width: 40%;
+	padding-left: 20px;
+
+}
+
+#headline1 {
+	float: right;
+	padding-right: 20px;
+
+}
+
+
+
+.container {
+	padding-right: 20px;
+	background-size: contain;
+}
+.thumbnail {
+
+   display: inline-block;
+}	
+
+.thumbnail img {
+	    max-width: 200px;
+    max-height: 150px;
+    min-width: 200px;
+    min-height: 150px;
+}	
