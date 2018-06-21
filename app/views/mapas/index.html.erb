@@ -1,56 +1,21 @@
+  <script type="text/javascript">
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -8.839, lng: 13.289},
+          zoom: 5
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7n6Gzb5I33aWaNGIP-bVbz9n1Q4nEkhM&callback=initMap"
+    async defer></script>
 
-<p id="notice"><%= notice %></p>
-
-<h1>Mapas</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Latitude</th>
-      <th>Longitude</th>
-      <th>Address</th>
-      <th>Description</th>
-      <th>Title</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-s
-  <tbody>
-    <% @mapas.each do |mapa| %>
-      <tr>
-        <td><%= mapa.latitude %></td>
-        <td><%= mapa.longitude %></td>
-        <td><%= mapa.address %></td>
-        <td><%= mapa.description %></td>
-        <td><%= mapa.title %></td>
-        <td><%= link_to 'Show', mapa %></td>
-        <td><%= link_to 'Edit', edit_mapa_path(mapa) %></td>
-        <td><%= link_to 'Destroy', mapa, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Mapa', new_mapa_path %>
-<div style='width: 800px;'>
-  <div id="map" style='width: 800px; height: 400px;'></div>
-</div>
-
-
-
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Simple Map</title>
-    <meta name="viewport" content="initial-scale=1.0">
-    <meta charset="utf-8">
     <style>
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
       #map {
-        height: 100%;
+         height: 100%;
+
       }
       /* Optional: Makes the sample page fill the window. */
       html, body {
@@ -59,19 +24,13 @@ s
         padding: 0;
       }
     </style>
-  </head>
-  <body>
-    <div id="map"></div>
-    <script>
-      var map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -34.397, lng: 150.644},
-          zoom: 8
-        });
-      }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7n6Gzb5I33aWaNGIP-bVbz9n1Q4nEkhM&callback=initMap"
-    async defer></script>
-  </body>
-</html>
+ 
+    <div id="map">
+    </div>
+        <div id="headline_1" style="float: right; padding-right: 20%;">
+      <%= image_tag("support.png", :alt => "protector", :size => "270x280") %>
+      </div>
+         <h5 style="color: white; background-color: black; width: 35%; padding-left: 2%;"><strong> Endereço :</strong> <br>
+      Complexo Habitacional da Samba, CR 5B - Bª. Maianga. <br></h5>
+      <p style="color: white; background-color: black; width: 50%; align-content: center; padding-left: 2%;">Estamos aptos para actuar em Luanda como também no interior do país com funcionários bem treinados. Os nossos técnicos e colaboradores possuem assistência renovada por sua eficiência e capacidade de resolução de problemas de forma prática e rápida, através de uma equipe técnica altamente capacitada. Neste processo garantimos agilidade no atendimento e qualidade na execução dos trabalhos, como também sigilo dentro das nossas áreas de actuação.</p>
+  

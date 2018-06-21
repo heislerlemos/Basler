@@ -5,6 +5,10 @@ class MapasController < ApplicationController
   # GET /mapas.json
   def index
     @mapas = Mapa.all
+@hash = Gmaps4rails.build_markers(@mapas) do |mapa, marker|
+  marker.lat mapa.latitude
+  marker.lng mapa.longitude
+end
   end
 
   # GET /mapas/1
