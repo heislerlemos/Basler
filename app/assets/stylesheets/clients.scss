@@ -1,0 +1,19 @@
+// Place all the styles related to the clients controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.container {
+	padding-right: 20px;
+	background-size: contain;
+}
+.thumbnail {
+
+   display: inline-block;
+}	
+
+.thumbnail img {
+	    max-width: 200px;
+    max-height: 150px;
+    min-width: 200px;
+    min-height: 150px;
+}	

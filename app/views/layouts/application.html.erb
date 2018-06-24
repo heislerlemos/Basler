@@ -15,8 +15,9 @@
     <%= link_to "Basler", root_path, :class  => "navbar-brand"%>
     </div>
     <ul class="nav navbar-nav">
+            <li class="<%= 'active' if current_page?(services_path) %>"><%= link_to "Serviços", services_path %></li>
+              <li class="<%= 'active' if current_page?(clients_path) %>"><%= link_to "Clientes", clients_path %></li>
        <li class="<%= 'active' if current_page?(mapas_path) %>"><%= link_to "Mapa", mapas_path %></li>
-        <li class="<%= 'active' if current_page?(services_path) %>"><%= link_to "Serviços", services_path %></li>
     </ul>
    <!--<button class="btn btn-danger navbar-btn">Email</button>-->
   </div>
@@ -25,5 +26,8 @@
 
   <body>
     <%= yield %>
+    <div id="formbutton" style="height: 50px;  border-bottom : 20px solid black; color: white;">
+
+</div>
   </body>
 </html>
