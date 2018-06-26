@@ -31,15 +31,18 @@ width: 40%;
 .container {
 	padding-right: 20px;
 	background-size: contain;
+	width: 500px;
+	height: 300p
 }
-.thumbnail {
+.col-md-4 {
 
    display: inline-block;
+   padding-left: 30%;
 }	
 
 .thumbnail img {
-	    max-width: 200px;
+	    max-width: 400px;
     max-height: 150px;
-    min-width: 200px;
-    min-height: 150px;
+/**    min-width: 200px;
+    min-height: 150px; **/
 }	
