@@ -14,6 +14,9 @@ gem 'rails', '~> 5.1.6'
 gem 'puma', '~> 3.7'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'gmaps4rails'
+
+gem 'mail_form'
+gem 'simple_form'
 # Use SCSS for stylesheets
 gem 'geocoder', '~> 1.4', '>= 1.4.9'
 gem 'sass-rails', '~> 5.0'

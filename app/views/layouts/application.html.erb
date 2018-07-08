@@ -18,6 +18,9 @@
             <li class="<%= 'active' if current_page?(services_path) %>"><%= link_to "Serviços", services_path %></li>
               <li class="<%= 'active' if current_page?(clients_path) %>"><%= link_to "Clientes", clients_path %></li>
        <li class="<%= 'active' if current_page?(mapas_path) %>"><%= link_to "Mapa", mapas_path %></li>
+     <div style="float: left;">
+     <%= link_to "Email", contacts_path, :class => "btn btn-lg btn-danger" %>
+     </div>
     </ul>
    <!--<button class="btn btn-danger navbar-btn">Email</button>-->
   </div>

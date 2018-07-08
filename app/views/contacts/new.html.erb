@@ -1,0 +1,26 @@
+
+<%= stylesheet_link_tag    'contacts', media: 'all', 'data-turbolinks-track': 'reload' %>
+<br>
+<br>
+<div align="center">
+<div style="border: 1px solid white; background-color: tomato; width: 600px;  height: 500px; " align="center">
+<br>
+<br>
+<h1 style="color: white;"> Envie um email </h1>
+<%= simple_form_for @contact, :html => {:class => 'form-horizontal'} do |f| %>
+<br>
+<%= f.input :name, :require => true, :size => "100" %>
+<br>
+<%= f.input :email, :require => true, :size => "100" %>
+<br>
+<%= f.input :message, :as => :text, :require => true, :size => "484x60" %>
+<div class= "hidden">
+<%= f.input :nickname, :hint =>  "Deixe este campo aberto !" %>
+</div> 
+<div>
+</br>
+<%= f.button :submit, 	"Envie o email", :class => "btn btn-primary" %>
+</div>
+<% end %>
+</div>
+</div>

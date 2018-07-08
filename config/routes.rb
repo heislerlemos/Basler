@@ -4,5 +4,7 @@ Rails.application.routes.draw do
   root "bemvindos#index"
   resources :services
   resources :clients
+  match '/contacts',  to: 'contacts#new', via:'get'
+  resources "contacts", only: [:new, :create]
 end
 	
