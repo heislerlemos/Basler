@@ -3,17 +3,17 @@
 <br>
 <br>
 <div align="center">
-<div style="border: 1px solid white; background-color: tomato; width: 600px;  height: 500px; " align="center">
+<div style="background-color: darkgrey; width: 600px;  height: 500px; " align="center">
 <br>
 <br>
-<h1 style="color: white;"> Envie um email </h1>
+<small> Envie um email </small>
 <%= simple_form_for @contact, :html => {:class => 'form-horizontal'} do |f| %>
 <br>
-<%= f.input :name, :require => true, :size => "100" %>
+<%= f.input :name, :require => true, :required => true, :input_html => {:style=> 'width: 90%'} %>
 <br>
-<%= f.input :email, :require => true, :size => "100" %>
+<%= f.input :email, :require => true, :required => true, :input_html => { :style=> 'width: 90%;'} %>
 <br>
-<%= f.input :message, :as => :text, :require => true, :size => "484x60" %>
+<%= f.input :message, :as => :text, :required => true, :input_html => {:rows => 9, :style => 'width: 500px;'} %>
 <div class= "hidden">
 <%= f.input :nickname, :hint =>  "Deixe este campo aberto !" %>
 </div> 
