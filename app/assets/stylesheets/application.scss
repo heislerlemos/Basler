@@ -15,15 +15,43 @@
 @import "bootstrap";
 
 head {
-		background-color:   #17191b;
-	font-family: 'PT Sans', sans-serif;
+
+		background-color:   white;
+	
+	   font-family: 'Roboto', sans-serif;
+
 }
 
 body {
+
 		background-color:   #17191b;
-	font-family: 'PT Sans', sans-serif;
+   font-family: 'Roboto', sans-serif;
+
+
+}
+
+.navbar-header {
+padding-top: 4px;
 }
 
 .navbar-brand {
-	color: tomato;
+	color: white;
+	  padding: 0px; /* firefox bug fix */
+	  border-top: 30px;
+
+
+}
+
+.navbar-brand>img {
+  height: 100%;
+  padding: 15px; /* firefox bug fix */
+  width: auto;
+}
+
+
+.glyphicon {
+	top: 15px;
+	left: 1000px;
+	color: white;
+
 }

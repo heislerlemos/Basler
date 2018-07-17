@@ -1,21 +1,23 @@
 <%= stylesheet_link_tag    'contacts', media: 'all', 'data-turbolinks-track': 'reload' %>
-<br>
-<br>
+
+
 <div align="center">
-<div style="background-color: darkgrey; width: 600px;  height: 500px; " align="center">
+<div style=" width: 900px;  height: 900px; " align="center">
 <br>
 <br>
-<small> Envie um email </small>
-<%= simple_form_for @contact, :html => {:class => 'form-horizontal'} do |f| %>
+<h1 style="color: white; font-family: 'Roboto', sans-serif; font-size: 60px;" class="text-success"> Envie-nos um email ! </h1>
+<%= simple_form_for @contact, :html => {:class => 'form-vertical'} do |f| %>
 <br>
-<%= f.input :name, :require => true, :required => true, :input_html => {:style=> 'width: 90%'} %>
+<%= f.input :name, :require => true, :required => true, :input_html => {:style=> 'width: 100%'} %>
 <br>
-<%= f.input :email, :require => true, :required => true, :input_html => { :style=> 'width: 90%;'} %>
+<%= f.input :email, :require => true, :required => true, :input_html => { :style=> 'width: 100%;'} %>
 <br>
-<%= f.input :message, :as => :text, :required => true, :input_html => {:rows => 9, :style => 'width: 500px;'} %>
+<br>
+<br>
+<%= f.input :message, :as => :text, :required => true, :input_html => {:rows => 9, :style => 'width: 900px;'} %>
 <div>
 </br>
-<%= f.button :submit, 	"Envie o email", :class => "btn btn-primary" %>
+<%= f.button :submit, 	"Enviar", :class => "btn btn-lg btn-info" %>
 </div>
 <% end %>
 </div>
