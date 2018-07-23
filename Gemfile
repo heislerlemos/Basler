@@ -14,7 +14,7 @@ gem 'rails', '~> 5.1.6'
 gem 'puma', '~> 3.7'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'gmaps4rails'
-
+gem "bootstrap_flash_messages", "~> 1.0.1"
 gem 'mail_form'
 gem 'simple_form'
 # Use SCSS for stylesheets
