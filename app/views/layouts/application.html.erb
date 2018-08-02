@@ -13,16 +13,12 @@
 <script src='//cdn.rawgit.com/printercu/google-maps-utility-library-v3-read-only/master/infobox/src/infobox_packed.js' type='text/javascript'></script> <!-- only if you need custom infoboxes -->
       <nav class="navbar navbar-inverse">
   <div class="container-fluid">
-    <div class="navbar-header">
-    <%= link_to image_tag("1600.png", :alt => "logo", :size => "35x35"), root_path %></p> 
-    </div>
     <ul class="nav navbar-nav">
+     <li class="<%= 'active' if current_page?(root_path) %>"><%= link_to "Basler", root_path %></li>
             <li class="<%= 'active' if current_page?(services_path) %>"><%= link_to "Serviços", services_path %></li>
               <li class="<%= 'active' if current_page?(clients_path) %>"><%= link_to "Clientes", clients_path %></li>
        <li class="<%= 'active' if current_page?(mapas_path) %>"><%= link_to "Mapa", mapas_path %></li>
-     <div style="float: left;">
-       <%= link_to "", contacts_path, :class => "glyphicon glyphicon-envelope" %>
-     </div>
+              <li class="<%= 'active' if current_page?(contacts_path) %>"><%= link_to "Mensagem", contacts_path %></li>
     </ul>
    <!--<button class="btn btn-danger navbar-btn">Email</button>-->
   </div>
@@ -47,7 +43,7 @@
   <br>
   <div id="contact-field">
    <table> 
-    <%= image_tag("190587-people-culture (1).png", :alt => "rss feed" , :size => "300x300", :style => "opacity:0.4;filter:alpha(opacity=40); float: left;") %>
+    <%= image_tag("190587-people-culture (1).png", :alt => "rss feed" , :size => "250x250", :style => "opacity:0.8;filter:alpha(opacity=40); float: left;") %>
   <tr>
     <th >Sobre</th>
     <th>Produtos</th> 
@@ -87,8 +83,9 @@
 </table>
 <br>
 <br>
-  <small>Copyright © 2018 BASLER LTD. All rights reserved.</small>
-
+ <div align="center">
+  <small >Copyright © 2018 BASLER LTD. All rights reserved.</small>
+</div>
   </div>
 
   </body>
