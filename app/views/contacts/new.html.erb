@@ -4,20 +4,19 @@
 <div align="center">
 <div style=" width: 900px;  height: 900px; " align="center">
 <br>
-<br>
 <h1 style="color: white; font-family: 'Roboto', sans-serif; font-size: 60px;" class="text-success"> Envie-nos um email ! </h1>
 <%= simple_form_for @contact, :html => {:class => 'form-vertical'} do |f| %>
 <br>
-<%= f.input :name, :require => true, :required => true, :input_html => {:style=> 'width: 100%'} %>
+<%= f.input :name, :require => true, :required => true, :input_html => {:style=> 'width: 100%; color: white;'} %>
 <br>
-<%= f.input :email, :require => true, :required => true, :input_html => { :style=> 'width: 100%;'} %>
+<%= f.input :email, :require => true, :required => true, :input_html => { :style=> 'width: 100%; color: black;'} %>
 <br>
 <br>
 <br>
 <%= f.input :message, :as => :text, :required => true, :input_html => {:rows => 9, :style => 'width: 900px;'} %>
 <div>
 </br>
-<%= f.button :submit, 	"Enviar", :class => "btn btn-lg btn-info" %>
+<%= f.button :submit, 	"Enviar" %>
 </div>
 <% end %>
 </div>
