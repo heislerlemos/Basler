@@ -24,4 +24,5 @@
 
 # Ignore configuration envirement
 
-/config/environments/*t
+/config/environments/production*
+
