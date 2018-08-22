@@ -21,3 +21,7 @@
 /yarn-error.log
 
 .byebug_history
+
+# Ignore configuration envirement
+
+/config/environments/*t

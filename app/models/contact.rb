@@ -5,8 +5,8 @@ class Contact < MailForm::Base
 
 def headers
 	{
-:subject =>  "O meu formulario de contacto",
-:to => "lamportruby@gmail.com",
+:subject =>  "Basler Website",
+:to => "basler.2001@gmail.com",
 :from => %("#{name}" <#{email}>)
 }
 end

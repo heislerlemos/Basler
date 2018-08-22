@@ -61,8 +61,8 @@ config.action_mailer.smtp_settings = {
    address:              'smtp.gmail.com',
    port:                 587,
    domain:               'gmail.com',
-   user_name:            'lamportruby',
-   password:             'lamport1234567890',
+   user_name:            'basler.2001',
+   password:             'namibe.2001',
    authentication:       'plain',
    enable_starttls_auto: true  
 }
