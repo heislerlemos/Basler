@@ -25,4 +25,4 @@
 # Ignore configuration envirement
 
 /config/environments/production*
-
+/config/environments/development*
